@@ -12,7 +12,7 @@ namespace Annotations
         public static void validate_details()
         {
             UserDetails userobj = new UserDetails();
-            userobj.first_name = "Sanjay";
+            userobj.first_name = "Vishal";
 
             ValidationContext context = new ValidationContext(userobj, null, null);
             List<ValidationResult> results = new List<ValidationResult>();
