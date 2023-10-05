@@ -12,7 +12,9 @@ namespace Annotations
         public static void validate_details()
         {
             UserDetails userobj = new UserDetails();
-            userobj.first_name = "Sanjay";
+            userobj.first_name = "Vishal";
+            userobj.last_name = "Kunchal";
+            userobj.email = "vishal@gmail.com";
 
             ValidationContext context = new ValidationContext(userobj, null, null);
             List<ValidationResult> results = new List<ValidationResult>();
@@ -27,9 +29,17 @@ namespace Annotations
             }
             else
             {
-                Console.WriteLine(userobj.first_name);
+                Console.WriteLine("fisrt name : " + userobj.first_name);
+                Console.WriteLine("last name  : " + userobj.last_name);
+                Console.WriteLine("email id : " + userobj.email);
+
 
             }
+
+
+
+
+
         }
 
     }
